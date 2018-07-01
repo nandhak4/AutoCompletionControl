@@ -5,8 +5,7 @@ import { NgForm } from '@angular/forms';
 
 @Component({
     selector: 'auto-complete',
-    templateUrl: 'app/autocompletion/autocomplete.component.html',
-    styleUrls: ['app/autocompletion/autocomplete.component.css']
+    templateUrl: 'app/autocompletion/autocomplete.component.html'
 })
 export class AutoCompleteComponent implements OnInit {
 
@@ -39,7 +38,7 @@ export class AutoCompleteComponent implements OnInit {
 
     getInputStyle(): any {
         if (this.width != 0)
-            return {width: this.width};
+            return { width: this.width };
         return {}
     }
 

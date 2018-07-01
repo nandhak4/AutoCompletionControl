@@ -1,5 +1,6 @@
 <form #searchForm="ngForm" autocomplete="off" novalidate>
-    <input type="text" [ngStyle]="getInputStyle()" #searchBox [ngModel]='searchInput' (ngModelChange)="search(searchForm.value)" name="searchInput" placeholder="Enter a number to search">
+    <input type="text" [ngStyle]="getInputStyle()" #searchBox [ngModel]='searchInput' (ngModelChange)="search(searchForm.value)"
+        name="searchInput" placeholder="Enter a number to search">
     <div [ngStyle]="getCollectionStyle()" *ngIf='result.length > 0'>
         <table>
             <tr *ngFor='let value of result'>
