@@ -1,0 +1,28 @@
+{
+  "name": "autocompletion",
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "live-server": "live-server",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run live-server\" "
+  },
+  "dependencies": {
+    "@angular/common": "^6.0.7",
+    "@angular/compiler": "^6.0.7",
+    "@angular/core": "^6.0.7",
+    "@angular/forms": "^6.0.7",
+    "@angular/platform-browser": "^6.0.7",
+    "@angular/platform-browser-dynamic": "^6.0.7",
+    "core-js": "^2.5.7",
+    "rxjs": "^6.2.1",
+    "rxjs-compat": "^6.2.1",
+    "systemjs": "^0.21.4",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "live-server": "^1.2.0",
+    "typescript": "^2.9.2"
+  }
+}
